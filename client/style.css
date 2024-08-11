@@ -1,0 +1,79 @@
+body {
+  background-color: rgba(23, 23, 249, 0.351); 
+  color: white;
+  font-family: Arial;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+.chat-container {
+  background-color: rgba(11, 11, 233, 0.836);
+  border-radius: 10px;
+  padding: 20px;
+  width: 80%;
+  max-width: 600px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+#chat-window {
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+  height: 300px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+}
+
+#messages {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#messages li {
+  padding: 8px 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: rgba(23, 97, 255, 0.659); 
+  color: #ffffff; 
+}
+
+
+#chat-form {
+  display: flex;
+  gap: 10px;
+}
+
+#message-input, #room-input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(2, 2, 145);
+  color: white;
+}
+
+#message-input::placeholder, #room-input::placeholder {
+  color: rgb(174, 171, 171);
+}
+
+
+#chat-form button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #001f3f; 
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#chat-form button:hover {
+  background-color: #004080;
+}
